@@ -10,18 +10,21 @@ const articles = [
     imageAlt: 'about image',
     title: 'The Best Location',
     text: 'Nestled in the heart of Curacao, our residence provides the perfect escape from the hustle and bustle of everyday life. Enjoy breathtaking views, world-class amenities, and unparalleled service.',
+    buttonText: 'Explore location',
   },
   {
     imageSrc: '/article-image/dinning.jpg',
     imageAlt: 'about image',
     title: 'Luxurious Accommodations',
     text: 'Experience the epitome of luxury with our elegantly designed accommodations. Each room is meticulously crafted to provide the utmost comfort and style.',
+    buttonText: 'Explore accommodations',
   },
   {
     imageSrc: '/article-image/front-view.jpg',
     imageAlt: 'about image',
     title: 'World-Class Amenities',
     text: 'Indulge in our world-class amenities, including a state-of-the-art fitness center, spa, and gourmet dining options. Every detail is designed to enhance your stay.',
+    buttonText: 'See amenities',
   },
   // {
   //   imageSrc: '/article-image/outdoor.jpg',
@@ -72,7 +75,9 @@ export default function AboutSection() {
 
   return (
     <section ref={elementRef} className={`${aboutSection()} ${isVisible ? s.animate : s.hidden}`}>
-      <h2 className={s.aboutHeading}>What we offer</h2>
+      <h2 className={s.aboutHeading}>
+        What we <span>offer</span>
+      </h2>
       {/* <p className={s.aboutText}>
         Serenity Residence Curacao offers a unique blend of luxury and tranquility. Nestled in the heart of Curacao, our
         residence provides the perfect escape from the hustle and bustle of everyday life. Enjoy breathtaking views,

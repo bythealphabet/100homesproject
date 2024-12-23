@@ -1,22 +1,27 @@
 .aboutSection {
   display: grid;
-  grid-template-rows: 5rem auto auto 2rem auto;
-  gap: 2rem 0;
+  grid-template-rows: 4rem auto;
   grid-column: 1 / -1;
   // grid-row: 5 / -1;
-  background: var(--accent);
-  padding: 4rem 0;
+  // background: var(--accent);
+  padding: 0 0 4rem 0;
   transform: translateY(10rem);
 }
 
 .aboutHeading {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--secondary);
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--text-color);
 
-  grid-column: 2 / span 4;
+  grid-column: 2 / -2;
   grid-row: 2;
   align-self: end;
+  justify-self: center;
+  text-transform: uppercase;
+
+  span {
+    font-weight: 700;
+  }
 }
 
 .aboutText {

@@ -3,6 +3,7 @@ import { cva } from 'class-variance-authority';
 import Hero from '@/components/header/hero/hero';
 import AboutSection from '@/components/header/about-section/about-section';
 import Cta from '@/components/cta/cta';
+import Invest from '@/components/invest/invest';
 
 const main = cva([, s.main, 'base-grid']);
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Cta />
       <AboutSection />
+      <Invest />
     </main>
   );
 }

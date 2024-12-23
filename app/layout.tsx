@@ -4,7 +4,7 @@ import './globals.scss';
 import Header from '@/components/header/header';
 
 const lato = Lato({
-  weight: ['400', '700'],
+  weight: ['100', '300', '400', '700'],
   subsets: ['latin'],
 });
 
