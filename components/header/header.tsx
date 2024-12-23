@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import s from './header.module.scss';
 import { cva } from 'class-variance-authority';
 
