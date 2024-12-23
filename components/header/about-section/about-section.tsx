@@ -6,21 +6,22 @@ import CardCta from '@/components/card/card-cta';
 
 const articles = [
   {
-    imageSrc: '/article-image/bath.jpg',
+    imageSrc: 'https://www.balitecture.com/wp-content/uploads/2024/11/GJ-Villa-Jan-Georgette-8-1024x1024.webp',
     imageAlt: 'about image',
     title: 'The Best Location',
     text: 'Nestled in the heart of Curacao, our residence provides the perfect escape from the hustle and bustle of everyday life. Enjoy breathtaking views, world-class amenities, and unparalleled service.',
     buttonText: 'Explore location',
   },
   {
-    imageSrc: '/article-image/dinning.jpg',
+    imageSrc:
+      'https://www.balitecture.com/wp-content/uploads/2024/07/Dasa-Uluwatu-3-Bedroom-Banner-new-26-07-24-1024x1024.webp',
     imageAlt: 'about image',
     title: 'Luxurious Accommodations',
     text: 'Experience the epitome of luxury with our elegantly designed accommodations. Each room is meticulously crafted to provide the utmost comfort and style.',
     buttonText: 'Explore accommodations',
   },
   {
-    imageSrc: '/article-image/front-view.jpg',
+    imageSrc: 'https://www.balitecture.com/wp-content/uploads/2022/02/natural-highres-38-1-1024x683.jpg',
     imageAlt: 'about image',
     title: 'World-Class Amenities',
     text: 'Indulge in our world-class amenities, including a state-of-the-art fitness center, spa, and gourmet dining options. Every detail is designed to enhance your stay.',

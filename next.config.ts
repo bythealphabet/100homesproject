@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['www.balitecture.com'],
   },
-  output: 'export',
+  // output: 'export',
   /* config options here */
 };
 
