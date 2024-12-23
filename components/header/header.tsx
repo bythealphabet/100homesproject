@@ -45,7 +45,7 @@ export default function Header() {
         >
           <g>
             <path
-              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#1A1A1A' }}
+              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF' }}
               d="M979.128,2048.981l751.436-768.911l715.305,749.361
 		c-86.325,2.552-171.785,9.585-253.107,18.242l-8.091,0.869l-474.105-488.475l-465.982,496.048l-60.922,64.852
 		c-70.158-15.373-141.927-37.597-202.512-70.865L979.128,2048.981z"
@@ -57,7 +57,7 @@ export default function Header() {
 		c-70.158-15.373-141.927-37.597-202.512-70.865L979.128,2048.981z"
             />
             <path
-              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#1A1A1A' }}
+              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF' }}
               d="M2129.721,1643.943l199.241-203.877l597.965,626.433
 		l24.812,25.993c-86.225-30.757-179.683-48.44-275.735-57.156l-362.792-374.74l-83.127,88.489L2129.721,1643.943z"
             />
@@ -67,7 +67,7 @@ export default function Header() {
 		l597.965,626.433l24.812,25.993c-86.225-30.757-179.683-48.44-275.735-57.156l-362.792-374.74l-83.127,88.489L2129.721,1643.943z"
             />
             <polygon
-              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#1A1A1A' }}
+              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF' }}
               points="1276.473,1446.141 1726.019,986.14 2165.116,1446.141 
 		2016.434,1446.141 1715.324,1135.908 1423.889,1446.141 	"
             />
@@ -77,13 +77,13 @@ export default function Header() {
 		1726.019,986.14 2165.116,1446.141 2016.434,1446.141 1715.324,1135.908 1423.889,1446.141 	"
             />
             <path
-              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#1A1A1A' }}
+              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF' }}
               d="M1611.023,1840.521h89.812v89.815h-89.812V1840.521z
 		 M1611.023,1970.253h89.812v89.817h-89.812V1970.253z M1740.751,1970.253h89.815v89.817h-89.815V1970.253z M1740.751,1840.521
 		h89.815v89.815h-89.815V1840.521z"
             />
             <path
-              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#1A1A1A' }}
+              style={{ fillRule: 'evenodd', clipRule: 'evenodd', fill: '#FFFFFF' }}
               d="M3207.47,2695.302c0.378,46.598-14.781,94.82-46.898,134.368
 		c-87.979,108.32-211.838,107.375-211.838,107.375c122.882-6.103,305.977-181.576,191.287-271.203
 		c-130.257-101.793-222.114,159.278-251.007,195.717c-21.337,26.92-47.34,45.458-73.522,58.21

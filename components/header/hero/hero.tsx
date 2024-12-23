@@ -1,10 +1,10 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import s from './hero.module.scss';
 
 export default function Hero() {
   return (
     <section className={s.heroSection}>
-      <figure className={s.heroFigure}>
+      {/* <figure className={s.heroFigure}>
         <Image
           src="/hero-background/home-inside.jpg"
           className={s.heroImage}
@@ -12,7 +12,8 @@ export default function Hero() {
           width={1000}
           height={1000}
         />
-      </figure>
+      </figure> */}
+      <div className={s.backgroundImage}></div>
       <div className={s.backgroundGradient}></div>
       <div className={s.heroText}>
         <div className={s.heroTextContent}>

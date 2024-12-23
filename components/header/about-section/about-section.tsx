@@ -72,12 +72,12 @@ export default function AboutSection() {
 
   return (
     <section ref={elementRef} className={`${aboutSection()} ${isVisible ? s.animate : s.hidden}`}>
-      <h2 className={s.aboutHeading}>Welcome to Serenity Residence</h2>
-      <p className={s.aboutText}>
+      <h2 className={s.aboutHeading}>What we offer</h2>
+      {/* <p className={s.aboutText}>
         Serenity Residence Curacao offers a unique blend of luxury and tranquility. Nestled in the heart of Curacao, our
         residence provides the perfect escape from the hustle and bustle of everyday life. Enjoy breathtaking views,
         world-class amenities, and unparalleled service.
-      </p>
+      </p> */}
 
       <div className={s.articleBox}>
         {articles.map((article, index) => (
