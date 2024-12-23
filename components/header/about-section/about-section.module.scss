@@ -1,0 +1,38 @@
+.aboutSection {
+  display: grid;
+  grid-template-rows: 5rem auto auto 2rem auto;
+  gap: 2rem 0;
+  grid-column: 1 / -1;
+  grid-row: 5 / -1;
+  background: var(--accent);
+  padding: 4rem 0;
+  transform: translateY(10rem);
+}
+
+.aboutHeading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--secondary);
+
+  grid-column: 2 / span 4;
+  grid-row: 2;
+  align-self: end;
+}
+
+.aboutText {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary);
+
+  grid-column: 2 / span 4;
+  grid-row: 3;
+}
+
+.articleBox {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  grid-column: 2 / -1;
+  grid-row: 5;
+  margin-top: 4rem;
+}

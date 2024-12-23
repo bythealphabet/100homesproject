@@ -15,6 +15,7 @@
   --primary: #0f2c42;
   --secondary: #f1faee;
   --accent: #50748f;
+  --accent-secondary: #ffd700;
   --text-color: #020508;
 }
 
@@ -109,10 +110,10 @@ textarea:not([rows]) {
 /* /////GRID LAYOUT */
 .base-grid {
   display: grid;
-  grid-template-columns: minmax(1em, 1fr) repeat(6, minmax(30px, 125px)) minmax(1em, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) repeat(6, minmax(3rem, 12.5rem)) minmax(1rem, 1fr);
 
   @media (min-width: 900px) {
-    grid-template-columns: minmax(10em, 1fr) repeat(12, minmax(50px, 125px)) minmax(10em, 1fr);
+    grid-template-columns: minmax(10rem, 1fr) repeat(12, minmax(5rem, 12.5rem)) minmax(10rem, 1fr);
   }
 }
 

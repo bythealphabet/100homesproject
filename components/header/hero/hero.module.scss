@@ -1,0 +1,119 @@
+.backgroundGradient {
+  background: linear-gradient(
+    to top right,
+    rgba(80, 116, 143, 0.2) 0%,
+    rgba(80, 116, 143, 0) 30%,
+    rgba(241, 250, 238, 0.5) 50%,
+    rgba(241, 250, 238, 1) 100%
+  );
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.heroSection {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+
+  .heroFigure {
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: subgrid;
+
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    .heroImage {
+      display: flex;
+      width: 100%;
+      object-fit: cover;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+  }
+
+  .heroText {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+
+    .heroTextContent {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      gap: 2rem;
+      grid-column: 8 / -2;
+      grid-row: 3;
+    }
+
+    .heroTextHeading {
+      --fade-distance: 60%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      gap: 2rem;
+      grid-column: 8 / -2;
+      grid-row: 3;
+    }
+
+    .heroTextTitle {
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--accent);
+      opacity: 0;
+      --fade-distance: 50%;
+      animation: slideInBottomFade 1s 0.2s ease-in-out forwards;
+    }
+
+    .heroTextSubtitle {
+      line-height: 1;
+      font-size: 8rem;
+      font-weight: 700;
+      opacity: 0;
+      --fade-distance: 30%;
+      animation: slideInBottomFade 1s 0.7s ease-in-out forwards;
+    }
+  }
+
+  .ctaButton {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    margin-top: 2.4rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: var(--secondary);
+    opacity: 0;
+    --fade-distance: 60%;
+    animation: slideInBottomFade 1s 1.2s ease-in-out forwards;
+
+    &:hover,
+    &:focus {
+      background: var(--primary);
+      color: var(--secondary);
+    }
+  }
+
+  @keyframes slideInBottomFade {
+    0% {
+      transform: translateY(var(--fade-distance));
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
