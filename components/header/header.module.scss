@@ -10,14 +10,46 @@
   z-index: 1000;
   grid-column: 2;
   align-self: center;
+  justify-self: center;
+
+  @media (min-width: 900px) {
+    justify-self: flex-start;
+  }
 }
 
 .menu {
-  grid-column: 3 / -2;
-  align-self: center;
+  z-index: 10;
+  position: fixed;
+  background: var(--secondary);
 
-  display: flex;
-  justify-content: flex-end;
+  top: var(--headerHeight);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(var(--open-menu-width));
+
+  transition: transform 0.525s ease-in-out;
+
+  display: grid;
+  grid-template-rows: repeat(4, 60px) 30px 120px 100px 80px 60px;
+
+  @media (min-width: 900px) {
+    position: initial;
+    background: transparent;
+    overflow-y: hidden;
+    transform: translateX(0);
+    border: none;
+    opacity: 1;
+
+    display: flex;
+    justify-content: flex-end;
+
+    grid-column: 3 / -2;
+    align-self: center;
+  }
+
+  @media (min-width: 900px) {
+  }
 }
 
 .navLinks {

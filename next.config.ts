@@ -4,7 +4,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   // basePath: isProduction ? '/100homesproject' : undefined,
-  basePath: '/100homesproject',
+  // basePath: '/100homesproject',
   images: {
     domains: ['www.balitecture.com'],
   },
