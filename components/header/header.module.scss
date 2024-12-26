@@ -1,5 +1,11 @@
 .header {
   --font-weight: 300;
+  --link-color: var(--text-color);
+
+  @media (min-width: 900px) {
+    --link-color: var(--secondary);
+  }
+
   z-index: 10;
   height: var(--header-height);
   grid-column: 1 / -1;
@@ -26,12 +32,9 @@
   right: 0;
   left: 0;
   bottom: 0;
-  transform: translateX(var(--open-menu-width));
+  // transform: translateX(var(--open-menu-width));
 
   transition: transform 0.525s ease-in-out;
-
-  display: grid;
-  grid-template-rows: repeat(4, 60px) 30px 120px 100px 80px 60px;
 
   @media (min-width: 900px) {
     position: initial;
@@ -48,13 +51,22 @@
     align-self: center;
   }
 
-  @media (min-width: 900px) {
+  .nav {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2rem;
   }
 }
 
 .navLinks {
-  display: flex;
-  gap: 5rem;
+  height: 100%;
+  grid-column: 2;
+
+  @media (min-width: 900px) {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 
 .navLinkItem {
@@ -93,9 +105,9 @@
 .navLink,
 .navSubLink {
   text-decoration: none;
-  color: var(--secondary);
   font-size: 2.4rem;
   font-weight: var(--font-weight);
+  color: var(--link-color);
 }
 
 .underline {
@@ -126,7 +138,7 @@
   cursor: pointer;
   background: none;
   border: none;
-  color: var(--secondary);
+  color: var(--link-color);
   font-size: 2.4rem;
   font-weight: var(--font-weight);
 }
@@ -138,18 +150,21 @@
 }
 
 .navSubMenu {
-  margin-top: 1rem;
   cursor: pointer;
-  position: absolute;
+  // position: absolute;
   top: 7rem;
   transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: var(--secondary);
+  // background-color: var(--secondary);
   padding: 1.4rem 2.4rem;
+
+  @media (min-width: 900px) {
+    margin-top: 1rem;
+  }
 
   .navSubLink {
     color: var(--text-color);

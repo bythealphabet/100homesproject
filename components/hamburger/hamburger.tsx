@@ -15,12 +15,13 @@ const buns = cva(s['b-default'], {
 });
 
 export default function Hamburger() {
-  const [active, setActive] = useState(true);
-  const [firstLoad, setFirstLoad] = useState(true);
+  const [active, setActive] = useState(false);
+  const [firstLoad, setFirstLoad] = useState(false);
 
   useEffect(() => {
     if (firstLoad) {
-      setFirstLoad(false);
+      setFirstLoad(true);
+      setActive(true);
       return;
     }
 

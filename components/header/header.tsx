@@ -40,7 +40,7 @@ export default function Header() {
       </div>
       <Hamburger />
       <div className={s.menu}>
-        <nav>
+        <nav className={s.nav}>
           <ul role="list" className={s.navLinks}>
             {navigationLinks.map((link) =>
               link.dropdown || link.href === undefined ? (
